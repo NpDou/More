@@ -1,0 +1,107 @@
+#header p {
+  height: 60px;
+  line-height: 60px;
+  background: url(../img/index_top_nav_l.png) 0 24px no-repeat;
+  text-align: right;
+  font-size: 13px;
+}
+
+#header p a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+#header p a {
+  color: #666666;
+  text-decoration: none;
+}
+
+#header p a:nth-child(2) {
+  padding: 0 10px;
+  margin: 0 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#header p a:nth-child(3) {
+  padding: 0 10px 0 30px;
+  background: url(../img/rttop.fw.png) 10px -91px;
+}
+
+#header p a:nth-child(4) {
+  padding: 0 10px 0 30px;
+  background: url(../img/rttop.fw.png) -170px -1px;
+}
+
+#header .headerBottom {
+  overflow: hidden;
+}
+
+#header .headerBottom .userLogo {
+  width: 404px;
+}
+
+#header .headerBottom div {
+  height: 91px;
+  float: left;
+}
+
+#header .headerBottom .headerNav ul {
+  width: 418px;
+  padding: 0 10px;
+  line-height: 100px;
+}
+
+#header .headerBottom .headerNav ul li {
+  float: left;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+#header .headerBottom .headerNav ul li a {
+  padding-bottom: 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+#header .headerBottom .headerNav ul li a:hover {
+  border-bottom: 2px solid orange;
+  color: orange;
+}
+
+#header .headerBottom .search {
+  padding-left: 63px;
+}
+
+#header .headerBottom .search ul {
+  height: 32px;
+  width: 315px;
+}
+
+#header .headerBottom .search ul li {
+  width: 63px;
+  float: left;
+}
+
+#header .headerBottom .search ul li a {
+  font-size: 10px;
+  color: #A396B0;
+  text-decoration: none;
+}
+
+#header .headerBottom .search input {
+  width: 278px;
+  height: 29px;
+  box-sizing: border-box;
+  border: none;
+  vertical-align: bottom;
+  background: url(../img/head_index_searchbj.gif);
+}
+
+#header .headerBottom .search button {
+  height: 29px;
+  width: 35px;
+  background: url(../img/head_index_searchbj.gif) -277px 0;
+  border: none;
+  vertical-align: bottom;
+}

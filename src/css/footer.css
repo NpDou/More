@@ -1,0 +1,152 @@
+#footerNav {
+  height: 410px;
+}
+
+#footerNav .about {
+  overflow: hidden;
+}
+
+#footerNav .about a:hover {
+  color: #C98702;
+  text-decoration: underline;
+}
+
+#footerNav .about ul {
+  float: left;
+  width: 150px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+#footerNav .about ul li {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#footerNav .about ul li a {
+  text-decoration: none;
+  color: #9696B0;
+}
+
+#footerNav .about ul li:first-child {
+  padding-bottom: 10px;
+}
+
+#footerNav .about ul:last-child {
+  width: 300px;
+  border-right: 1px solid #ccc;
+}
+
+#footerNav .about ul:last-child li {
+  padding-top: 40px;
+  padding-bottom: 0;
+  height: 150px;
+}
+
+#footerNav .about ul:last-child li:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+#footerNav .about ul:last-child li:first-child h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#footerNav .about ul:last-child h2 {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+#footerNav .about ul:last-child h2 a {
+  color: #000;
+}
+
+#footerNav .about ul:last-child h6 {
+  margin: 0 0 5px 0;
+  color: #B2B2B2;
+}
+
+#footerNav .server {
+  margin: 17px 0px;
+  height: 75px;
+  background: url(../img/footer_ico1.png);
+}
+
+#link {
+  height: 40px;
+  background: url(../img/naver_bj.gif);
+  position: relative;
+}
+
+#link ul {
+  line-height: 40px;
+  overflow: hidden;
+}
+
+#link ul li {
+  float: left;
+}
+
+#link ul li a {
+  font-size: 12px;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+#link ul li a:hover {
+  color: #C98702;
+}
+
+#link .hideNav {
+  height: 0;
+  overflow: hidden;
+  background: #aaa;
+  text-align: center;
+}
+
+#link .hideNav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #eee;
+  padding: 5px;
+}
+
+#link .hideNav a:hover {
+  text-decoration: underline;
+}
+
+#copyright {
+  height: 110px;
+}
+
+#copyright p {
+  text-align: center;
+  height: 46px;
+  color: #9696B0;
+  font-size: 12px;
+  line-height: 46px;
+}
+
+#copyright div {
+  height: 50px;
+  text-align: center;
+}
+
+#copyright div a img {
+  border: 1px solid #ccc;
+}
+
+#copyright div a:last-child {
+  display: inline-block;
+  width: 127px;
+  height: 47px;
+}
+
+#copyright div a:last-child img {
+  position: relative;
+  border: none;
+  float: left;
+}

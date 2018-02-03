@@ -1,0 +1,121 @@
+@import 'var';
+#footerNav{
+    height: 410px;
+    .about{
+        a:hover{
+            color:#C98702;
+            text-decoration: underline;
+        }
+        overflow: hidden;
+        ul{ 
+            float: left;
+            width: 150px;
+            height: 300px;
+            border:1px solid #ccc;
+            border-right:none;
+            li{
+                padding-top: 10px;       
+                font-size:$fsize;
+                text-align: center;
+                a{  
+                    text-decoration: none;
+                    color:$fcolor;
+                }
+            }
+            li:first-child{
+                padding-bottom:10px;
+            }
+        }
+        ul:last-child{
+            width: 300px;
+            border-right:1px solid #ccc;
+            li{
+                padding-top: 40px;
+                padding-bottom: 0;
+                height: 150px;
+            }
+            li:first-child{
+                border-bottom:1px solid #ccc;
+                h3{
+                    margin: 10px 0;
+                    font-size: 18px;
+                }
+            }
+            h2{
+                a{color:#000;}
+                margin: 10px 0;
+                font-size: $fsize;
+            }
+            h6{
+                margin: 0 0 5px 0;
+                color:#B2B2B2;
+            }
+        }
+    }
+    .server{
+        margin: 17px 0px;
+        height: 75px;
+        background: url(../img/footer_ico1.png);
+    }
+}
+#link{
+    height: 40px;
+    background: url(../img/naver_bj.gif);
+    position:relative;
+    ul{
+        line-height: 40px;
+        overflow: hidden;
+        li{
+            float: left;
+            a{
+                font-size: $fsize;
+                padding:5px;
+                text-decoration: none;
+                color:#000;
+            }
+            a:hover{color:#C98702}
+        }
+    }
+    .hideNav{
+        height: 0;
+        overflow: hidden;
+        background: #aaa;
+        text-align:center;
+        a{
+            text-decoration: none;
+            font-size: $fsize;
+            color:#eee;
+            padding:5px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+#copyright{
+    height: 110px;
+    p{  text-align: center;
+        height: 46px;
+        color:$fcolor;
+        font-size: $fsize;
+        line-height: 46px;
+    }
+    div{
+        height: 50px;
+        text-align: center;
+        a{
+            img{border:1px solid #ccc}
+
+        }
+        a:last-child{
+            display:inline-block;
+            width: 127px;
+            height: 47px;
+            img{
+                position:relative;
+                border:none;
+                float: left;
+           }
+       }
+    }
+}

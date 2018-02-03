@@ -1,0 +1,145 @@
+#header {
+  border-bottom: 2px solid #ccc;
+}
+
+#header .headerBottom div:nth-child(3) {
+  float: right;
+}
+
+main {
+  overflow: hidden;
+}
+
+main .mainl {
+  float: left;
+  box-sizing: border-box;
+  height: 550px;
+  padding: 60px 0;
+}
+
+main .mainr {
+  float: left;
+  box-sizing: border-box;
+  height: 550px;
+  width: 380px;
+  padding: 60px 0;
+}
+
+main .mainr p {
+  color: #969696;
+  font-size: 12px;
+}
+
+main .mainr p span {
+  float: right;
+}
+
+main .mainr p span a {
+  color: #E19619;
+  text-decoration: none;
+}
+
+main .mainr p span a:hover {
+  text-decoration: underline;
+}
+
+main .mainr .tab {
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+main .mainr .tab div {
+  float: left;
+  background: #FAFAFA;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  width: 190px;
+}
+
+main .mainr .tab .tab1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+main .mainr .tab .tab2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+main .mainr .tab .active {
+  background: #C30D23;
+  color: #fff;
+}
+
+main .mainr input {
+  height: 36px;
+  margin-top: 26px;
+  width: 244px;
+  background: #FDFDFD;
+  vertical-align: bottom;
+  border: 1px solid #ccc;
+}
+
+main .mainr button {
+  width: 244px;
+  margin: 25px 0;
+  border-radius: 5px;
+}
+
+main .mainr div p {
+  color: #535353;
+  margin-top: 34px;
+}
+
+main .mainr div h1 {
+  margin: 0;
+}
+
+main .mainr div h1 a {
+  display: inline-block;
+  height: 65px;
+  line-height: 65px;
+  width: 90px;
+  font-size: 12px;
+  padding-left: 50px;
+  color: #535353;
+  text-decoration: none;
+  background: url(../img/lglogin_3_weixin_login.png) no-repeat center left;
+  background-size: 40px 40px;
+}
+
+main .mainr div h1 a:first-child {
+  background: url(../img/lglogin_3_qq_login.png) no-repeat center left;
+  background-size: 40px 40px;
+}
+
+main .mainr .login {
+  height: 34px;
+  background: #E9AD11;
+  border: 1px solid #E19619;
+}
+
+main .mainr .sign_1 .num_1 {
+  width: 122px;
+  margin-right: 20px;
+}
+
+main .mainr .sign_1 .num_2 {
+  width: 122px;
+  margin-right: 20px;
+}
+
+main .mainr .sign_1 > a {
+  display: inline-block;
+  height: 38px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+  width: 102px;
+  background: #FFE6A5;
+  color: #E19619;
+  border: 1px solid #E19619;
+  border-radius: 5px;
+  vertical-align: bottom;
+}

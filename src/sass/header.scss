@@ -1,0 +1,91 @@
+#header{
+    p{
+        height: 60px;
+        line-height: 60px;
+        background: url(../img/index_top_nav_l.png) 0 24px no-repeat;
+        text-align: right;
+        font-size: 13px;
+        a:hover{text-decoration: underline;color:orange}
+        a{
+            color:#666666;
+            text-decoration: none;
+        }
+        a:nth-child(2){
+            padding: 0 10px;
+            margin: 0 10px;
+            border-left:1px solid #ccc;
+            border-right:1px solid #ccc;
+
+        }
+        a:nth-child(3){
+            padding: 0 10px 0 30px;
+            background: url(../img/rttop.fw.png) 10px -91px;
+        }
+        a:nth-child(4){
+            padding: 0 10px 0 30px;
+            background: url(../img/rttop.fw.png) -170px -1px;
+        }
+    }
+    .headerBottom{
+        overflow: hidden;
+        .userLogo{
+            width: 404px;
+        }
+        div{
+            height: 91px;
+            float: left;
+        }
+        .headerNav{
+            ul{
+                width: 418px;
+                padding: 0 10px;
+                line-height: 100px;
+                li{
+                    float: left;
+                    padding: 0 12px;
+                    font-size: 14px;
+                    a{  
+                        padding-bottom:3px;
+                        color:#000;
+                        text-decoration: none;
+                    }
+                    a:hover{  
+                        border-bottom: 2px solid orange;
+                        color:orange;
+                    }
+                }
+            }
+        }
+        .search{
+            padding-left: 63px;
+            ul{
+                height: 32px;
+                width: 315px;
+                li{ 
+                    width: 63px;
+                    float: left;
+                    a{
+                        font-size: 10px;
+                        color:#A396B0;
+                        text-decoration: none;
+                    }
+                }
+            }
+            input{
+                width: 278px;
+                height: 29px;
+                box-sizing:border-box;
+                border:none;
+                vertical-align:bottom;
+                background: url(../img/head_index_searchbj.gif);
+            }
+            button{
+                height:29px;
+                width:35px;
+                background: url(../img/head_index_searchbj.gif) -277px 0;
+                border:none;
+                vertical-align:bottom;
+            }
+        }
+    }
+}
