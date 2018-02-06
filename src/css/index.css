@@ -1,0 +1,576 @@
+nav {
+  height: 42px;
+  background: url(../img/naver_bj.gif);
+}
+
+nav ul {
+  position: relative;
+  height: 42px;
+  line-height: 42px;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 23px;
+}
+
+nav ul li a {
+  font-size: 12px;
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
+nav ul li div {
+  left: 0;
+  top: 42px;
+  width: 1200px;
+  height: 380px;
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+}
+
+nav ul li div dl {
+  height: 350px;
+  float: left;
+  padding-left: 40px;
+  width: 215px;
+  border-right: 1px solid #ccc;
+}
+
+nav ul li div dl dd {
+  height: 30px;
+  margin: 0;
+  font-size: 12px;
+}
+
+nav ul li div img {
+  float: right;
+  margin: 20px 40px;
+}
+
+nav ul li:hover div {
+  display: block;
+  z-index: 1000;
+}
+
+#banner .container {
+  position: relative;
+  height: 425px;
+}
+
+#banner .pic {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#banner .pic a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#banner .smallpic {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 10;
+  width: 190px;
+  height: 380px;
+}
+
+#banner .smallpic div {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+#banner .page {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+#banner .page span {
+  display: block;
+  z-index: 20;
+  float: left;
+  text-align: center;
+  color: red;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 5px;
+}
+
+#banner .page span:hover {
+  background: pink;
+  color: #fff;
+}
+
+#banner .page .active {
+  color: #fff;
+  background: red;
+}
+
+#banner .bannerText {
+  position: absolute;
+  width: 295px;
+  height: 388px;
+  right: 0;
+  top: 10px;
+}
+
+#banner .bannerText .texttop {
+  background: #fff;
+  padding: 0 20px;
+  margin-bottom: 14px;
+}
+
+#banner .bannerText .texttop p {
+  height: 46px;
+  border-bottom: 1px solid #CCC;
+}
+
+#banner .bannerText .texttop p a {
+  display: inline-block;
+  width: 125px;
+  text-align: center;
+  line-height: 46px;
+  font-size: 12px;
+}
+
+#banner .bannerText .texttop div {
+  height: 73px;
+}
+
+#banner .bannerText .textbottom {
+  padding: 20px 14px 0 14px;
+  height: 240px;
+  background: #fff;
+}
+
+#banner .bannerText .textbottom p {
+  margin-bottom: 20px;
+}
+
+#banner .bannerText .textbottom p a {
+  display: inline-block;
+  margin-right: 9px;
+  width: 78px;
+  height: 63px;
+  line-height: 65px;
+  text-align: center;
+  background: #F8F8F8;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+#banner .bannerText .textbottom p a:hover {
+  background: #fff;
+}
+
+#banner .bannerText .textbottom dl {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#banner .bannerText .textbottom dl dt {
+  height: 26px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#banner .bannerText .textbottom dl dd {
+  padding: 2px;
+}
+
+#banner .bannerText .textbottom dl dd a {
+  font-size: 12px;
+  color: #000;
+}
+
+main h2 {
+  color: #535353;
+  font-weight: normal;
+}
+
+main h2 span:last-child {
+  color: #535353;
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+}
+
+main h2 span:first-child {
+  font-size: 12px;
+}
+
+main .contry span {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  margin: 7px;
+  height: 120px;
+}
+
+main .contry span div:first-child {
+  width: 80px;
+  height: 100%;
+  float: left;
+  background: #F5F5F5;
+}
+
+main .contry span div:last-child {
+  width: 130px;
+  height: 100%;
+  float: right;
+}
+
+main .contry span div:last-child p {
+  margin: 10px;
+  text-align: left;
+}
+
+main .new {
+  height: 330px;
+  border: 1px solid #ccc;
+}
+
+main .new ul li a {
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+  color: #535353;
+  float: left;
+  height: 330px;
+  width: 214px;
+}
+
+main .new ul li a img {
+  width: 100%;
+  height: 225px;
+}
+
+main .new ul li a p {
+  margin: 10px;
+}
+
+main .new ul li a p:last-child {
+  color: #969696;
+}
+
+main .new ul li a i {
+  width: 100px;
+  height: 330px;
+  position: absolute;
+  left: -100px;
+  top: -20px;
+  z-index: -10;
+  transform: rotateZ(30deg);
+  background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+main .new ul li a:hover i {
+  left: 180px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+main .hot {
+  overflow: hidden;
+}
+
+main .hot div {
+  border: 1px solid #ccc;
+  width: 257px;
+  height: 200px;
+  float: left;
+}
+
+main .hot div a {
+  display: block;
+  padding: 10px;
+  width: 235px;
+  height: 180px;
+}
+
+main .hot div a span {
+  display: inline-block;
+  width: 114px;
+  color: #000;
+}
+
+main .hot div a span p {
+  font-size: 12px;
+  color: #969696;
+}
+
+main .hot div a img {
+  margin-top: 20px;
+  width: 110px;
+  height: 140px;
+  float: right;
+}
+
+main .hot div:first-child {
+  width: 420px;
+  border: 1px solid blue;
+  background: blue;
+}
+
+main .hot div:first-child a {
+  width: 420px;
+}
+
+main .hot div:nth-child(5) {
+  width: 420px;
+  border: 1px solid pink;
+  background: pink;
+}
+
+main .hot div:nth-child(5) a {
+  width: 420px;
+}
+
+main .flash div {
+  margin: 20px 7px;
+  float: left;
+  width: 585px;
+  height: 250px;
+}
+
+main .flash div a {
+  position: relative;
+  display: block;
+  width: 585px;
+  height: 250px;
+}
+
+main .flash div a img {
+  width: 585px;
+  height: 250px;
+}
+
+main .flash div a span {
+  text-align: center;
+  font-size: 14px;
+  color: #535353;
+  height: 90px;
+  width: 190px;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  background: #fff;
+}
+
+main .flash div a span h5 {
+  margin: 14px;
+  font-size: 22px;
+  color: red;
+}
+
+main .flash div a span i {
+  color: #969696;
+  font-size: 12px;
+}
+
+main .babyformula, main .babysup, main .babyfood, main .beauty, main .health, main .appliance {
+  border: 1px solid #ccc;
+  height: 750px;
+  width: 100%;
+}
+
+main .babyformula h2, main .babysup h2, main .babyfood h2, main .beauty h2, main .health h2, main .appliance h2 {
+  color: #535353;
+  font-size: 14px;
+}
+
+main .babyformula h4, main .babysup h4, main .babyfood h4, main .beauty h4, main .health h4, main .appliance h4 {
+  font-size: 12px;
+  color: #969696;
+}
+
+main .babyformula p, main .babysup p, main .babyfood p, main .beauty p, main .health p, main .appliance p {
+  color: #969696;
+  font-size: 12px;
+}
+
+main .babyformula p span, main .babysup p span, main .babyfood p span, main .beauty p span, main .health p span, main .appliance p span {
+  color: red;
+  font-size: 14px;
+}
+
+main .babyformula .up, main .babysup .up, main .babyfood .up, main .beauty .up, main .health .up, main .appliance .up {
+  height: 410px;
+  width: 100%;
+}
+
+main .babyformula .up > a, main .babysup .up > a, main .babyfood .up > a, main .beauty .up > a, main .health .up > a, main .appliance .up > a {
+  float: left;
+  padding-left: 20px;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  height: 408px;
+  width: 234px;
+}
+
+main .babyformula .up > a img, main .babysup .up > a img, main .babyfood .up > a img, main .beauty .up > a img, main .health .up > a img, main .appliance .up > a img {
+  width: 210px;
+  height: 244px;
+}
+
+main .babyformula .up > a:last-child, main .babysup .up > a:last-child, main .babyfood .up > a:last-child, main .beauty .up > a:last-child, main .health .up > a:last-child, main .appliance .up > a:last-child {
+  border-left: 1px solid #ccc;
+}
+
+main .babyformula .up > div, main .babysup .up > div, main .babyfood .up > div, main .beauty .up > div, main .health .up > div, main .appliance .up > div {
+  float: left;
+  display: inline-block;
+  height: 410px;
+  width: 688px;
+}
+
+main .babyformula .up > div a, main .babysup .up > div a, main .babyfood .up > div a, main .beauty .up > div a, main .health .up > div a, main .appliance .up > div a {
+  display: inline-block;
+  width: 319px;
+  padding-left: 20px;
+  border: 0 none;
+  border-left: 1px solid #ccc;
+  height: 188px;
+}
+
+main .babyformula .up > div a > span, main .babysup .up > div a > span, main .babyfood .up > div a > span, main .beauty .up > div a > span, main .health .up > div a > span, main .appliance .up > div a > span {
+  display: inline-block;
+  width: 180px;
+  height: 190px;
+}
+
+main .babyformula .up > div a img, main .babysup .up > div a img, main .babyfood .up > div a img, main .beauty .up > div a img, main .health .up > div a img, main .appliance .up > div a img {
+  width: 120px;
+  height: 188px;
+  float: right;
+}
+
+main .babyformula .up > div a.lunbo, main .babysup .up > div a.lunbo, main .babyfood .up > div a.lunbo, main .beauty .up > div a.lunbo, main .health .up > div a.lunbo, main .appliance .up > div a.lunbo {
+  padding: 0;
+  width: 687px;
+  height: 222px;
+}
+
+main .babyformula .down, main .babysup .down, main .babyfood .down, main .beauty .down, main .health .down, main .appliance .down {
+  height: 340px;
+}
+
+main .babyformula .down .pinpai, main .babysup .down .pinpai, main .babyfood .down .pinpai, main .beauty .down .pinpai, main .health .down .pinpai, main .appliance .down .pinpai {
+  float: left;
+  width: 256px;
+}
+
+main .babyformula .down > div, main .babysup .down > div, main .babyfood .down > div, main .beauty .down > div, main .health .down > div, main .appliance .down > div {
+  float: left;
+  height: 340px;
+}
+
+main .babyformula .down > div a, main .babysup .down > div a, main .babyfood .down > div a, main .beauty .down > div a, main .health .down > div a, main .appliance .down > div a {
+  display: inline-block;
+  float: left;
+  height: 340px;
+  width: 235px;
+}
+
+main .babyformula .down > div a img, main .babysup .down > div a img, main .babyfood .down > div a img, main .beauty .down > div a img, main .health .down > div a img, main .appliance .down > div a img {
+  height: 190px;
+  width: 130;
+}
+
+main .parenting {
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+  height: 540px;
+}
+
+main .parenting .pleft {
+  border-right: 1px solid #ccc;
+  float: left;
+  height: 520px;
+  width: 700px;
+  padding: 10px;
+}
+
+main .parenting .pleft .tabHeader {
+  height: 30px;
+  padding-top: 28px;
+  width: 100%;
+}
+
+main .parenting .pleft .tabHeader div {
+  float: left;
+  height: 28;
+  width: 60px;
+}
+
+main .parenting .pleft .tabHeader a {
+  float: right;
+  font-size: 12px;
+}
+
+main .parenting .pleft .content {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+main .parenting .pleft .content > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+}
+
+main .parenting .pleft .content > div > div {
+  float: left;
+  width: 350px;
+  height: 470px;
+}
+
+main .parenting .pleft .content > div > div > img {
+  width: 300px;
+  height: 300px;
+}
+
+main .parenting .pleft .content > div > div p {
+  display: block;
+  color: #969696;
+  height: 72px;
+  width: 215px;
+  font-size: 12px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+main .parenting .pleft .content > div > div > a {
+  color: red;
+  font-size: 12px;
+}
+
+main .parenting .pleft .content > div > div > a:hover {
+  text-decoration: underline;
+}
+
+main .parenting .pright {
+  float: left;
+}

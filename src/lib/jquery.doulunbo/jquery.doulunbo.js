@@ -19,16 +19,16 @@
                 height:opt.height,
                 margin:'0 auto',
                 overflow: 'hidden',
-                border:'10px solid #ccc',
-                position:'relative'
+                position:'relative',
             })
 
 
 
             var idx=opt.idx;
-            var len=opt.url.length;
+            var len=opt.adc.length;
             var timer;
             var $ul=$('<ul/>');
+            $ul.addClass("imglist");
             var $dotted=$('<div/>');
             var $next=$('<span/>');
             var $prov=$('<span/>');
@@ -48,13 +48,13 @@
                     height:opt.height,
                 });
                 $dotted.addClass('dotted');
-                var arr=opt.url.slice(0,opt.qty)
+                var arr=opt.adc.slice(0,opt.qty)
                 for(let i=0;i<opt.qty;i++){
-                    opt.url.push(arr[i]);
+                    opt.adc.push(arr[i]);
                 }
 
-                var html1=$.map(opt.url,function(item){
-                    return '<li><img src="'+item+'" alt="" /></li>'
+                var html1=$.map(opt.adc,function(item){
+                    return '<li class="imgli"><img src="'+item+'" alt="" /></li>'
                 }).join('');
                 var html2='';
                 for(let i=0;i<len;i++){
@@ -67,6 +67,10 @@
                 if(opt.diration=='vertical'){
                     $this.find('li').addClass('left')
                 }
+                $('.imgli').find('img').css({
+                    width:opt.width,
+                    height:opt.height,
+                })
                 show();
             }
             function autoshow(){
@@ -94,14 +98,7 @@
             };
 
 
-            function next(){
-                idx++;
-                show();
-            };
-            function prov(){
-                idx--;
-                show();
-            };
+           
 
         })
     }

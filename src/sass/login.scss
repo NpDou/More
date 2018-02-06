@@ -1,3 +1,26 @@
+.cover{
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        color:#fff;
+        position:fixed;
+        display:none;
+        left: 0;
+        top: 0;
+        z-index:1000;
+        div{
+            width: 300px;
+            height: 400px;
+            position:absolute;
+            bottom:50px;
+            right: 50px;
+            text-align: center;
+            p{
+                margin: 10px;
+                font-size: 12px;
+            }
+        }
+}
 #header{
     border-bottom: 2px solid #ccc;
     .headerBottom{
@@ -61,7 +84,6 @@ main{
             margin-top: 26px;
             width: 244px;
             background: #FDFDFD;
-            vertical-align:bottom;
             border:1px solid #ccc;;
         }
         button{
@@ -100,6 +122,19 @@ main{
                 border:1px solid #E19619;
             }
         .sign_1{
+            #check{
+                text-align: left;
+                height: 12px;
+                width: 20px;
+                margin: 0;
+                font-size: 12px;
+            }
+            span{
+                span{
+                    color:orange;
+                    font-size: 10px;
+                }
+            }
             .num_1{
                 width: 122px;
                 margin-right: 20px;
@@ -123,4 +158,5 @@ main{
             }
         }
     }
+
 }
