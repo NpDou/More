@@ -1,0 +1,9 @@
+require(['config'],function(){
+    require(['jquery','footer','zoom','lunbo'],function($,foo,zoo){
+        $('footer').load('../html/footer.html',function(){
+            foo();
+        });
+        $('header').load('../html/header.html');
+        $('nav').load('../html/nav.html');
+    })
+})

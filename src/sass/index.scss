@@ -325,6 +325,12 @@ main{
                         color:#969696;
                         font-size: 12px;
                     }
+                    &.timecout{
+                        height: 20px;
+                        width: 190px;
+                        top: 5px;
+                        left: 400px;
+                    }
                 }
             }
         }
@@ -402,11 +408,17 @@ main{
             .pinpai{
                 float: left;
                 width: 256px;
+                h6{
+                    display: block;
+                    margin:  20px 20px;
+                    height: 20px;
+                    float: left;
+                }
             }
             >div{
                 float: left;
                 height: 340px;
-                a{
+                >a{
                     display: inline-block;
                     float: left;
                     height: 340px;
@@ -431,12 +443,19 @@ main{
             padding: 10px;
             .tabHeader{
                 height: 30px;
-                padding-top: 28px;
+                padding-top: 20px;
+                padding-left: 5px;
                 width: 100%;
+                border-bottom: 1px solid #ccc;
                 div{
                     float: left;
-                    height: 28;
                     width: 60px;
+                    text-align: center;
+                }
+                .tactive{
+                    border:2px solid #ccc;
+                    height: 28px;
+                    background: rgba(252,252,252,0.7);
                 }
                 a{
                     float: right;
@@ -447,8 +466,8 @@ main{
                 position:relative;
                 width: 100%;
                 height: 480px;
-                >div{
                     >div{
+                        display: none;
                         position:absolute;
                         top: 0;
                         left: 0;
@@ -471,21 +490,95 @@ main{
                                 line-height: 24px;
                                 overflow: hidden;
                             }
-                            >a{
-                                color:red;
+                            a{
                                 font-size: 12px;
-                                &:hover{
-                                    text-decoration: underline;
+                            }
+                            >div{
+                                position:relative;
+                                dl{
+                                    height: 150px;
+                                    dt{
+                                        
+                                        height: 38;
+                                        line-height: 38px;
+                                        
+                                    }
+                                    dd{
+                                       a{
+                                            display: inline-block;
+                                            height: 20px;
+                                            line-height: 20px;
+                                            color:#969696;
+                                            width: 188px;
+                                            overflow: hidden;
+                                        } 
+                                        a:hover{
+                                            color:blue;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .pic{
+                                    z-index: 100;
+                                    position:absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                    width: 110px;
+                                    height: 50px;
+                                    img{
+                                        display: block;
+                                        width: 90px;
+                                        height: 110px;
+                                    }
+                                }
+                                >a{
+                                    color:red;
+                                    font-size: 12px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                
             }
         }
         .pright{
-            float: left;
+            float: right;
+            width: 450px;
+            font-size: 12px;
+            h3{
+                height: 60px;
+                margin: 0;
+                line-height: 76px;
+                border-bottom: 1px solid #ccc;  
+                a{
+                    float: right;
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+            }
+            ul{
+                overflow: hidden;
+                width: 100%;
+                li{
+                    width: 220px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    height: 15px;
+                    float: left;
+                    margin: 5px 0;
+                    list-style:square inside;
+                    margin-left: 5px;
+                    a{
+                        color:#969696;
+                        &:hover{
+                            text-decoration: underline;
+                            color:blue;
+                        }
+                    }
+                }
+            }
         }
     }
 }

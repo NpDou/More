@@ -2,7 +2,7 @@ define(['jquery'],function(){
     return function(){
         $tar=$('.Links').closest('li');
         $tar.on('mouseenter',function(){
-            $('.hideNav').stop().animate({height:50})
+            $('.hideNav').stop().animate({height:80})
         }).on('mouseleave',function(){
             $('.hideNav').stop().animate({height:0})
         })

@@ -11,6 +11,11 @@ require(['config'],function(){
                 item.src=item.src.slice(23);
             })
         })
+        $('nav').load('html/nav.html',function(){
+            $('nav img').each(function(idx,item){
+                item.src=item.src.slice(23);
+            })
+        })
         var i=0;
         var timer;
         var a_list=$('.pic').find('a');
@@ -159,9 +164,30 @@ require(['config'],function(){
                                         <p>${item.name}</p>
                                     </span>
                                     <img src="${item.url}" alt="">
+                                    <span class="timecout"></span>
                                 </a></div>`
                     }).join('\n');
                     $('.flash').html(str_f);
+                    var end = Date.parse('2018-3-29 12:05:20');
+                    showTime();
+                    var timer = setInterval(showTime,1000);
+                    function showTime(){
+                        var now = Date.now();
+                        var offset = Math.floor((end - now)/1000);//毫秒
+                        if(offset <= 0){
+                            clearInterval(timer);
+                        }
+                        var sec = offset%60;
+                        var min = Math.floor(offset/60)%60;
+                        var hour = Math.floor(offset/60/60)%24;
+                        var day = Math.floor(offset/60/60/24);
+                        sec = sec<10? '0'+sec : sec;
+                        min = min<10? '0'+min : min;
+                        hour = hour<10? '0'+hour : hour;
+                        day = day<10? '0'+day : day;
+                        $('.flash').find('.timecout').html(day + '天' + hour + '时' + min + '分' + sec + '秒');
+
+                    }
                 }
             })
             var idx=0;
@@ -172,6 +198,7 @@ require(['config'],function(){
                     dataType:'json',
                     success:function(data){
                         var arr=["img/index_ad_beauty_m_bottom4.jpg","img/index_ad_beauty_m_bottom5.jpg","img/index_ad_beauty_m_bottom7.jpg","img/index_ad_beauty_m_bottom8.jpg","img/index_ad_beauty_m_bottom9.jpg"];
+                        var str=["beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty"];
                         var num=randNum(0,data.length-1,8);
                         var _data=[];
                         for(let i=0;i<8;i++){
@@ -252,6 +279,11 @@ require(['config'],function(){
                             time:3000,
                             qty:1,
                         })
+                        var html_1='<h3>热门品牌 Hot</h3>';
+                        for(let i=1; i<str.length;i++){
+                            html_1+=`<h6 class="pinpaiName">${str[i]}</h6>`;
+                        }
+                        $($('.pinpai')[idx]).html(html_1);
                         idx++;
                     }
                 })
@@ -263,5 +295,12 @@ require(['config'],function(){
             getlist("api/data/list.json",$('.health'));
             getlist("api/data/list.json",$('.appliance'));
 
+
+            var $tab=$('.tabHeader').find('div');
+            $tab.on('mouseup',function(e){
+                var id=$(e.target).index();
+                $(e.target).addClass('tactive').siblings('div').removeClass('tactive');
+                $($('.content').children()[id]).fadeIn().siblings('div').fadeOut();
+            })
     })
 });

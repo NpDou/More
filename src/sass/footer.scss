@@ -63,21 +63,25 @@
     background: url(../img/naver_bj.gif);
     position:relative;
     ul{
+        position:relative;
         line-height: 40px;
-        overflow: hidden;
+        height: 40px;
         li{
             float: left;
-            a{
+            >a{
                 font-size: $fsize;
                 padding:5px;
                 text-decoration: none;
                 color:#000;
             }
-            a:hover{color:#C98702}
+            >a:hover{color:red}
         }
     }
     .hideNav{
         height: 0;
+        position:absolute;
+        top: 40px;
+        left: 0;
         overflow: hidden;
         background: #aaa;
         text-align:center;

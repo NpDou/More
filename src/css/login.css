@@ -110,6 +110,19 @@ main .mainr button {
   width: 244px;
   margin: 25px 0;
   border-radius: 5px;
+  height: 34px;
+  background: #E9AD11;
+  border: 1px solid #E19619;
+}
+
+main .mainr .yes {
+  color: green;
+  font-size: 12px;
+}
+
+main .mainr .no {
+  color: red;
+  font-size: 12px;
 }
 
 main .mainr div p {
@@ -137,12 +150,6 @@ main .mainr div h1 a {
 main .mainr div h1 a:first-child {
   background: url(../img/lglogin_3_qq_login.png) no-repeat center left;
   background-size: 40px 40px;
-}
-
-main .mainr .login {
-  height: 34px;
-  background: #E9AD11;
-  border: 1px solid #E19619;
 }
 
 main .mainr .sign_1 #check {

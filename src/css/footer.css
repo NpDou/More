@@ -81,27 +81,31 @@
 }
 
 #link ul {
+  position: relative;
   line-height: 40px;
-  overflow: hidden;
+  height: 40px;
 }
 
 #link ul li {
   float: left;
 }
 
-#link ul li a {
+#link ul li > a {
   font-size: 12px;
   padding: 5px;
   text-decoration: none;
   color: #000;
 }
 
-#link ul li a:hover {
-  color: #C98702;
+#link ul li > a:hover {
+  color: red;
 }
 
 #link .hideNav {
   height: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
   overflow: hidden;
   background: #aaa;
   text-align: center;

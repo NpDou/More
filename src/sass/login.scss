@@ -90,7 +90,19 @@ main{
             width:244px;
             margin:25px 0;
             border-radius:5px;
+            height: 34px;
+            background: #E9AD11;
+            border:1px solid #E19619;
         }
+        .yes{
+            color:green;
+            font-size: 12px;
+        }
+        .no{
+            color:red;
+            font-size: 12px;
+        }
+        
         div{
             p{
                 color:#535353;
@@ -116,11 +128,6 @@ main{
                 }
             }
         }
-        .login{
-                height: 34px;
-                background: #E9AD11;
-                border:1px solid #E19619;
-            }
         .sign_1{
             #check{
                 text-align: left;

@@ -387,6 +387,13 @@ main .flash div a span i {
   font-size: 12px;
 }
 
+main .flash div a span.timecout {
+  height: 20px;
+  width: 190px;
+  top: 5px;
+  left: 400px;
+}
+
 main .babyformula, main .babysup, main .babyfood, main .beauty, main .health, main .appliance {
   border: 1px solid #ccc;
   height: 750px;
@@ -479,19 +486,26 @@ main .babyformula .down .pinpai, main .babysup .down .pinpai, main .babyfood .do
   width: 256px;
 }
 
+main .babyformula .down .pinpai h6, main .babysup .down .pinpai h6, main .babyfood .down .pinpai h6, main .beauty .down .pinpai h6, main .health .down .pinpai h6, main .appliance .down .pinpai h6 {
+  display: block;
+  margin: 20px 20px;
+  height: 20px;
+  float: left;
+}
+
 main .babyformula .down > div, main .babysup .down > div, main .babyfood .down > div, main .beauty .down > div, main .health .down > div, main .appliance .down > div {
   float: left;
   height: 340px;
 }
 
-main .babyformula .down > div a, main .babysup .down > div a, main .babyfood .down > div a, main .beauty .down > div a, main .health .down > div a, main .appliance .down > div a {
+main .babyformula .down > div > a, main .babysup .down > div > a, main .babyfood .down > div > a, main .beauty .down > div > a, main .health .down > div > a, main .appliance .down > div > a {
   display: inline-block;
   float: left;
   height: 340px;
   width: 235px;
 }
 
-main .babyformula .down > div a img, main .babysup .down > div a img, main .babyfood .down > div a img, main .beauty .down > div a img, main .health .down > div a img, main .appliance .down > div a img {
+main .babyformula .down > div > a img, main .babysup .down > div > a img, main .babyfood .down > div > a img, main .beauty .down > div > a img, main .health .down > div > a img, main .appliance .down > div > a img {
   height: 190px;
   width: 130;
 }
@@ -512,14 +526,22 @@ main .parenting .pleft {
 
 main .parenting .pleft .tabHeader {
   height: 30px;
-  padding-top: 28px;
+  padding-top: 20px;
+  padding-left: 5px;
   width: 100%;
+  border-bottom: 1px solid #ccc;
 }
 
 main .parenting .pleft .tabHeader div {
   float: left;
-  height: 28;
   width: 60px;
+  text-align: center;
+}
+
+main .parenting .pleft .tabHeader .tactive {
+  border: 2px solid #ccc;
+  height: 28px;
+  background: rgba(252, 252, 252, 0.7);
 }
 
 main .parenting .pleft .tabHeader a {
@@ -534,6 +556,7 @@ main .parenting .pleft .content {
 }
 
 main .parenting .pleft .content > div {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -562,15 +585,101 @@ main .parenting .pleft .content > div > div p {
   overflow: hidden;
 }
 
-main .parenting .pleft .content > div > div > a {
+main .parenting .pleft .content > div > div a {
+  font-size: 12px;
+}
+
+main .parenting .pleft .content > div > div > div {
+  position: relative;
+}
+
+main .parenting .pleft .content > div > div > div dl {
+  height: 150px;
+}
+
+main .parenting .pleft .content > div > div > div dl dt {
+  height: 38;
+  line-height: 38px;
+}
+
+main .parenting .pleft .content > div > div > div dl dd a {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  color: #969696;
+  width: 188px;
+  overflow: hidden;
+}
+
+main .parenting .pleft .content > div > div > div dl dd a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+main .parenting .pleft .content > div > div > div .pic {
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 110px;
+  height: 50px;
+}
+
+main .parenting .pleft .content > div > div > div .pic img {
+  display: block;
+  width: 90px;
+  height: 110px;
+}
+
+main .parenting .pleft .content > div > div > div > a {
   color: red;
   font-size: 12px;
 }
 
-main .parenting .pleft .content > div > div > a:hover {
+main .parenting .pleft .content > div > div > div > a:hover {
   text-decoration: underline;
 }
 
 main .parenting .pright {
+  float: right;
+  width: 450px;
+  font-size: 12px;
+}
+
+main .parenting .pright h3 {
+  height: 60px;
+  margin: 0;
+  line-height: 76px;
+  border-bottom: 1px solid #ccc;
+}
+
+main .parenting .pright h3 a {
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+main .parenting .pright ul {
+  overflow: hidden;
+  width: 100%;
+}
+
+main .parenting .pright ul li {
+  width: 220px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 15px;
   float: left;
+  margin: 5px 0;
+  list-style: square inside;
+  margin-left: 5px;
+}
+
+main .parenting .pright ul li a {
+  color: #969696;
+}
+
+main .parenting .pright ul li a:hover {
+  text-decoration: underline;
+  color: blue;
 }

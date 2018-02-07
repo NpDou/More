@@ -2,11 +2,10 @@
 	$servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = 'jiaoxue';
+    $dbname = 'npdou_db';
 
 	// 创建连接
     $conn = new mysqli($servername, $username, $password, $dbname);
-
 
     // 检测连接
     // 如果失败提示错误信息
