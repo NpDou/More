@@ -10,6 +10,28 @@
     <link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
     <script src="../lib/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="../js/require.js" type="text/javascript" data-main="../js/shopcar.js"></script>
+<!--     <script type="text/javascript">
+        $.ajax({
+            url:'../MySQL/shopcar.php',
+            dataType:'json',
+            success:function(data){
+                var str=$.map(data,function(item){
+                    var total=item.qty*item.nprice;
+                    return `<tr data-id="${item.id}">
+                    <td><input type="checkbox" class="chose"/><a href="#"><img src="${item.url}" /></a></td>
+                                <td class="name"><a>${item.pinpai}</a> <a>${item.name}</a></td>
+                                <td class="send"><span>${item.sendm}</span></td>
+                                <td class="pri">￥${item.nprice}</td>
+                                <td class="qty"><button class="btn add">+</button><span>${item.qty}</span><button class="btn dec">-</button></td>
+                                <td class="total">￥${total}</td>
+                                <td><button class="btn delbtn">x</button></td>
+                            </tr>`
+                }).join('\n');
+                $('.carlist').html(str);
+                console.log(3)
+            }
+        })
+    </script> -->
 </head>
 <body>
     <div id="header">
@@ -42,7 +64,10 @@
                 </thead>
             </table>
             <div class="zhuanchang"><span>满减</span><span>满减辅食营养满减专场<span> 已满足【满299减20】</span><span>再购<i>199.00</i>元立享【满199减10】</span></span></div>
-            <table>
+            <table class="carlist">
+                
+            </table>
+            <table class="jiesuan">
                 <tr>
                     <td><input type="checkbox" class="allchose"/>全选 <span>商品金额总计（不含运费）: ￥<i class="totalP">0.00 </i></span></td>
                     <td></td>

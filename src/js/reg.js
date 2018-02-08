@@ -59,7 +59,6 @@ require(['config'],function(){
 
 
         $('.reg').on('click',function(){
-            console.log(123)
             $.ajax({
                 url:'../MySQL/regi.php',
                 data:{
@@ -67,7 +66,6 @@ require(['config'],function(){
                     password:$('.password').val()
                 },
                 success:function(data){
-                    console.log(data);
                     if(data === 'success'){
                         location.href = '../html/login.html';
                     }else if(data === 'fail'){

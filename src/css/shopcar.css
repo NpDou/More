@@ -96,9 +96,12 @@ main h4 a {
   font-size: 18px;
 }
 
+main table.jiesuan {
+  width: 1198px;
+}
+
 main table {
   margin: 10px 0;
-  width: 1198px;
   border-collapse: collapse;
 }
 
@@ -116,15 +119,16 @@ main table tr {
 }
 
 main table tr td {
-  width: 103px;
+  width: 130px;
   text-align: center;
 }
 
 main table tr td:nth-child(2) {
-  width: 266px;
+  width: 380px;
 }
 
 main table tr td:nth-child(1) {
+  width: 140px;
   padding-left: 20px;
   text-align: left;
 }
@@ -132,4 +136,46 @@ main table tr td:nth-child(1) {
 main table tr td button {
   height: 30px;
   width: 190px;
+}
+
+main table.carlist tr td a img {
+  display: block;
+  float: right;
+  height: 46px;
+  width: 25px;
+}
+
+main table.carlist tr td .btn {
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  margin: 5px;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+main table.carlist tr td.qty span {
+  display: inline-block;
+  width: 68px;
+  border: 1px solid #ccc;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+main table.carlist tr td.total {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main table.carlist tr td.send span {
+  background: skyblue;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+main table.carlist tr td.pri {
+  color: #96A3C0;
 }

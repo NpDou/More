@@ -1,3 +1,180 @@
-a {
+main {
+  margin-bottom: 50px;
+}
+
+main .container {
+  overflow: hidden;
+}
+
+main h3 {
+  height: 48px;
+  line-height: 48px;
+  font-weight: normal;
   font-size: 12px;
+}
+
+main h3 a {
+  color: #333333;
+}
+
+main .main_l {
+  width: 240px;
+  float: left;
+}
+
+main .main_l dl {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+main .main_l dl dt {
+  padding-left: 10px;
+  height: 35px;
+  line-height: 35px;
+  background: #ccc;
+}
+
+main .main_l dl dd {
+  border-top: 1px solid #ccc;
+  padding-left: 10px;
+  height: 66px;
+  line-height: 66px;
+}
+
+main .main_l .hotlist dd {
+  padding: 20px;
+  height: 260px;
+  border: 0 none;
+}
+
+main .main_l .hotlist dd img {
+  width: 180px;
+  height: 150px;
+}
+
+main .main_l .hotlist dd p {
+  line-height: 20px;
+  font-size: 12px;
+  height: 20px;
+}
+
+main .main_r {
+  width: 940px;
+  overflow: hidden;
+  float: right;
+}
+
+main .main_r .mtop {
+  height: 270px;
+  width: 940px;
+  border: 1px solid #ccc;
+}
+
+main .main_r .mtop li {
+  border-top: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+main .main_r .mtop li:nth-child(1) {
+  background: #ccc;
+  height: 35px;
+  line-height: 35px;
+}
+
+main .main_r .mtop li:nth-child(2) {
+  height: 135px;
+}
+
+main .main_r .mtop li:nth-child(3) {
+  height: 50px;
+  line-height: 50px;
+}
+
+main .main_r .mtop li:nth-child(4) {
+  line-height: 50px;
+  height: 50px;
+}
+
+main .main_r .mtop li:nth-child(4) span {
+  float: left;
+  text-align: center;
+}
+
+main .main_r .mtop li:nth-child(4) .jieduan, main .main_r .mtop li:nth-child(4) .peisong {
+  margin: 0 10px;
+  margin-top: 10px;
+  display: block;
+  height: 27px;
+  width: 76px;
+  border: 1px solid #ccc;
+  line-height: 25px;
+}
+
+main .main_r h4 {
+  overflow: hidden;
+}
+
+main .main_r h4 > span {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+}
+
+main .main_r h4 > span i {
+  color: red;
+}
+
+main .main_r .list {
+  margin-top: 30px;
+}
+
+main .main_r .list li {
+  float: left;
+  display: block;
+  width: 278px;
+  margin: 0 10px;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+main .main_r .list li img {
+  width: 266px;
+  height: 300px;
+}
+
+main .main_r .list li p {
+  font-size: 12px;
+  color: #775252;
+}
+
+main .main_r .list li p span {
+  color: #D29B0B;
+}
+
+main .main_r .list li h5 {
+  padding: 0 15px;
+  color: red;
+}
+
+main .main_r .list li h5 span {
+  float: right;
+  background: skyblue;
+  color: #fff;
+  border-radius: 5px;
+}
+
+main .main_r .list li div {
+  padding: 10px;
+  background: #ccc;
+  color: #fff;
+  opacity: 0;
+}
+
+main .main_r .list li:hover div {
+  opacity: 1;
+}
+
+main .main_r .list li:hover {
+  border: 1px solid #ccc;
 }

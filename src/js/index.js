@@ -100,8 +100,8 @@ require(['config'],function(){
             }
             function getdata(tar){
                 $.ajax({
-                    type:'GET',
-                    url:'api/data/new.json',
+                    url:'MySQL/goods.php',
+                    data:{hot:'t'},
                     dataType:'json',
                     success:function(data){
                         var num=randNum(0, data.length-1,5);
@@ -112,7 +112,7 @@ require(['config'],function(){
                         var str_n=$.map(_data,function(item){
                             return `<li>
                                 <a href="#">
-                                    <img src="${item.url}" alt="">
+                                    <img src="${item.url.slice(3)}" alt="">
                                     <p>${item.name}</p>
                                     <p>${item.nprice}</p>
                                     <i></i>
@@ -124,15 +124,16 @@ require(['config'],function(){
                     }
                 })  
             }
+
             getdata($('.new'));
             $('.change').on('mouseup',function(){
                 $('.new').html("");
                 getdata($('.new'));
             })
-
+// 获取热门商品
             $.ajax({
-                type:'GET',
-                url:'api/data/new.json',
+                url:'MySQL/goods.php',
+                data:{hot:'t'},
                 dataType:'json',
                 success:function(data){
                     var num=randNum(0, data.length-1,8);
@@ -146,12 +147,15 @@ require(['config'],function(){
                                         <h5>${item.engname}</h5>
                                         <p>${item.name}</p>
                                     </span>
-                                    <img src="${item.url}" alt="">
+                                    <img src="${item.url.slice(3)}"alt="">
                                 </a></div>`
                     }).join('\n');
                     $('.hot').html(str_h);
                 }
             })
+
+
+
             $.ajax({
                 type:'GET',
                 url:'api/data/flash.json',
@@ -168,6 +172,11 @@ require(['config'],function(){
                                 </a></div>`
                     }).join('\n');
                     $('.flash').html(str_f);
+                    // 倒计时
+                    // 
+                    // 
+                    // 
+                    // 
                     var end = Date.parse('2018-3-29 12:05:20');
                     showTime();
                     var timer = setInterval(showTime,1000);
@@ -191,12 +200,14 @@ require(['config'],function(){
                 }
             })
             var idx=0;
-            function getlist(src,tar){
+            // 分类获取函数
+            function getlist(tar,cla){
                 $.ajax({
-                    type:'GET',
-                    url:src,
+                    url:'MySQL/goods.php',
+                    data:{class:'b'},
                     dataType:'json',
                     success:function(data){
+                        console.log(data);
                         var arr=["img/index_ad_beauty_m_bottom4.jpg","img/index_ad_beauty_m_bottom5.jpg","img/index_ad_beauty_m_bottom7.jpg","img/index_ad_beauty_m_bottom8.jpg","img/index_ad_beauty_m_bottom9.jpg"];
                         var str=["beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty"];
                         var num=randNum(0,data.length-1,8);
@@ -207,29 +218,29 @@ require(['config'],function(){
                         var str_l= `<div class="up">
                                         <a>
                                             <h2>${_data[1].pinpai}</h2>
-                                            <h4>${_data[1].discribe}</h4>
+                                            <h4>${_data[1].name}</h4>
                                             <h4>${_data[1].class}</h4>
                                             <p>低至<span>￥${_data[1].nprice}</span></p>
-                                            <img src=${_data[1].url} alt="">
+                                            <img src=${_data[1].url.slice(3)} alt="">
                                         </a>
                                         <div>
                                             <a>
                                                 <span>
                                                     <h2>${_data[2].pinpai}</h2>
-                                                    <h4>${_data[2].discribe}</h4>
+                                                    <h4>${_data[2].name}</h4>
                                                     <h4>${_data[2].class}</h4>
                                                     <p>低至<span>￥${_data[2].nprice}</span></p>
                                                 </span>
-                                                <img src=${_data[2].url} alt="">  
+                                                <img src=${_data[2].url.slice(3)} alt="">  
                                             </a>
                                             <a>
                                                 <span>
                                                     <h2>${_data[3].pinpai}</h2>
-                                                    <h4>${_data[3].discribe}</h4>
+                                                    <h4>${_data[3].name}</h4>
                                                     <h4>${_data[3].class}</h4>
                                                     <p>低至<span>￥${_data[3].nprice}</span></p>
                                                 </span>
-                                                <img src=${_data[3].url} alt="">  
+                                                <img src=${_data[3].url.slice(3)} alt="">  
                                             </a>
                                             <a class="lunbo">
                                                 
@@ -237,10 +248,10 @@ require(['config'],function(){
                                         </div>
                                         <a>
                                             <h2>${_data[4].pinpai}</h2>
-                                            <h4>${_data[4].discribe}</h4>
+                                            <h4>${_data[4].name}</h4>
                                             <h4>${_data[4].class}</h4>
                                             <p>低至<span>￥${_data[4].nprice}</span></p>
-                                            <img src=${_data[4].url} alt="">
+                                            <img src=${_data[4].url.slice(3)} alt="">
                                         </a>
                                         </div>
                                         <div class="down">
@@ -249,22 +260,22 @@ require(['config'],function(){
                                             </div>
                                             <div>
                                                 <a href="#">
-                                                    <img src=${_data[4].url}  alt="">
+                                                    <img src=${_data[4].url.slice(3)}  alt="">
                                                     <h5>${_data[4].class}</h5>
                                                     <p>￥${_data[4].nprice}</p>
                                                 </a>
                                                 <a href="#">
-                                                    <img src=${_data[5].url}  alt="">
+                                                    <img src=${_data[5].url.slice(3)}  alt="">
                                                     <h5>${_data[5].class}</h5>
                                                     <p>￥${_data[5].nprice}</p>
                                                 </a>
                                                 <a href="#">
-                                                    <img src=${_data[6].url}  alt="">
+                                                    <img src=${_data[6].url.slice(3)}  alt="">
                                                     <h5>${_data[6].class}</h5>
                                                     <p>￥${_data[6].nprice}</p>
                                                 </a>
                                                 <a href="#">
-                                                    <img src=${_data[7].url}  alt="">
+                                                    <img src=${_data[7].url.slice(3)}  alt="">
                                                     <h5>${_data[7].class}</h5>
                                                     <p>￥${_data[7].nprice}</p>
                                                 </a>
@@ -288,12 +299,12 @@ require(['config'],function(){
                     }
                 })
             }
-            getlist("api/data/list.json",$('.babyformula'));
-            getlist("api/data/list.json",$('.babyfood'));
-            getlist("api/data/list.json",$('.babysup'));
-            getlist("api/data/list.json",$('.beauty'));
-            getlist("api/data/list.json",$('.health'));
-            getlist("api/data/list.json",$('.appliance'));
+            getlist($('.babyformula'),'a');
+            getlist($('.babyfood'),'b');
+            getlist($('.babysup'),'c');
+            getlist($('.beauty'),'a');
+            getlist($('.health'),'b');
+            getlist($('.appliance'),'c');
 
 
             var $tab=$('.tabHeader').find('div');

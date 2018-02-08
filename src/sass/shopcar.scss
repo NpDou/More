@@ -83,9 +83,11 @@ main{
 
         }
     }
+    table.jiesuan{
+        width: 1198px;
+    }
     table{
         margin: 10px 0;
-        width: 1198px;
         border-collapse: collapse;
         thead{
             tr{
@@ -97,12 +99,13 @@ main{
             border:1px solid #ccc;
             height: 70px;
             td{
-                width: 103px;
+                width: 130px;
                 text-align: center;
                 &:nth-child(2){
-                    width: 266px;
+                    width: 380px;
                 }
                 &:nth-child(1){
+                    width: 140px;
                     padding-left: 20px;
                     text-align: left;
                 }
@@ -110,6 +113,56 @@ main{
                     height:30px;
                     width:190px;
                 }
+            }
+        }
+    }
+    table.carlist{
+        tr{
+            td{
+                // background: #ccc;
+                a{
+                    img{
+                        display: block;
+                        float: right;
+                        height: 46px;
+                        width: 25px;
+                    }
+                }
+                .btn{
+                    width: 16px;
+                    height: 16px;
+                    font-size: 12px;
+                    text-align: center;
+                    margin: 5px;
+                    padding: 0;
+                    vertical-align: bottom;
+                }
+                &.qty{
+                    span{
+                        display: inline-block;
+                        width: 68px;
+                        border:1px solid #ccc;
+                        height: 25px;
+                        vertical-align: bottom;
+                    }
+                }
+                &.total{
+                    color:red;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                &.send{
+                    span{
+                        background: skyblue;
+                        color:#fff;
+                        padding: 2px;
+                        border-radius:5px;
+                    }
+                }
+                &.pri{
+                    color:#96A3C0;
+                }
+                &.name{}
             }
         }
     }
