@@ -6,7 +6,7 @@ require.config({
 		'jquery':'../lib/jquery-3.2.1',
 		'zoom':'../lib/jquery.douZoom/jquery.douZoom',
 		'lunbo':'../lib/jquery.doulunbo/jquery.doulunbo',
-		'conmon':'../lib/common',
+		'common':'../lib/common',
 	},
 
 	shim:{

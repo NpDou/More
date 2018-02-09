@@ -1,0 +1,88 @@
+main .container {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+main .container h4 {
+  font-size: 12px;
+}
+
+main .container .good .goodl {
+  float: left;
+  width: 500px;
+}
+
+main .container .good .goodl .piclist {
+  width: 70px;
+  float: left;
+}
+
+main .container .good .goodl .piclist ul {
+  height: 380px;
+}
+
+main .container .good .goodl .details {
+  float: right;
+  width: 430px;
+}
+
+main .container .good .goodl .details img {
+  width: 427px;
+  height: 420px;
+}
+
+main .container .good .goodl .details p span {
+  float: left;
+  height: 20px;
+  width: 80px;
+}
+
+main .container .good .goodl .details p a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: #ccc;
+  margin-right: 5px;
+}
+
+main .container .good .goodr {
+  width: 600px;
+  float: right;
+}
+
+main .container .good .goodr .addtocar {
+  width: 196px;
+  height: 36px;
+  background: #E7AA0D;
+  border: 1px solid #ccc;
+  color: #fff;
+  text-align: center;
+}
+
+main .container .good .goodr > p {
+  padding: 10px;
+  font-size: 12px;
+}
+
+main .container .good .goodr > p span {
+  margin-right: 20px;
+}
+
+main .container .good .goodr > p input {
+  width: 40px;
+  margin: 0 10px;
+}
+
+main .container .good .goodr .mess {
+  margin: 10px;
+  padding: 0 10px;
+  height: 120px;
+  background: #ccc;
+  border: 1px solid red;
+}
+
+main .container .good .goodr .mess p {
+  font-size: 12px;
+  margin: 10px 0;
+}

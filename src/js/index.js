@@ -1,16 +1,20 @@
 require(['config'],function(){
-    require(['jquery','footer','zoom','lunbo'],function($,foo,zoo){
+    require(['jquery','footer','return','lunbo'],function($,foo,re){
         $('footer').load('html/footer.html',function(){
             $('footer img').each(function(idx,item){
                 item.src=item.src.slice(23);
             })
             foo();
         });
+        $('.returnT').load('html/return.html',function(){
+            re();
+        });
         $('header').load('html/header.html',function(){
             $('header img').each(function(idx,item){
                 item.src=item.src.slice(23);
             })
         })
+
         $('nav').load('html/nav.html',function(){
             $('nav img').each(function(idx,item){
                 item.src=item.src.slice(23);
@@ -207,7 +211,6 @@ require(['config'],function(){
                     data:{class:'b'},
                     dataType:'json',
                     success:function(data){
-                        console.log(data);
                         var arr=["img/index_ad_beauty_m_bottom4.jpg","img/index_ad_beauty_m_bottom5.jpg","img/index_ad_beauty_m_bottom7.jpg","img/index_ad_beauty_m_bottom8.jpg","img/index_ad_beauty_m_bottom9.jpg"];
                         var str=["beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty","beauty"];
                         var num=randNum(0,data.length-1,8);
@@ -261,22 +264,22 @@ require(['config'],function(){
                                             <div>
                                                 <a href="#">
                                                     <img src=${_data[4].url.slice(3)}  alt="">
-                                                    <h5>${_data[4].class}</h5>
+                                                    <h5>${_data[4].class} ${_data[4].name} </h5>
                                                     <p>￥${_data[4].nprice}</p>
                                                 </a>
                                                 <a href="#">
                                                     <img src=${_data[5].url.slice(3)}  alt="">
-                                                    <h5>${_data[5].class}</h5>
+                                                    <h5>${_data[5].class} ${_data[5].name}</h5>
                                                     <p>￥${_data[5].nprice}</p>
                                                 </a>
                                                 <a href="#">
                                                     <img src=${_data[6].url.slice(3)}  alt="">
-                                                    <h5>${_data[6].class}</h5>
+                                                    <h5>${_data[6].class} ${_data[6].name}</h5>
                                                     <p>￥${_data[6].nprice}</p>
                                                 </a>
                                                 <a href="#">
                                                     <img src=${_data[7].url.slice(3)}  alt="">
-                                                    <h5>${_data[7].class}</h5>
+                                                    <h5>${_data[7].class} ${_data[7].name}</h5>
                                                     <p>￥${_data[7].nprice}</p>
                                                 </a>
                                             </div>

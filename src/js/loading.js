@@ -17,7 +17,6 @@ define(['jquery'],function(){
                             </tr>`
                 }).join('\n');
                 $('.carlist').html(str);
-                console.log(3)
             }
         }) 
     }

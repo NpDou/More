@@ -103,8 +103,20 @@ main{
                     color:red;
                 }
             }
+            .next,.prov{
+                border:1px solid #ccc;
+            }
+            .fal{
+                background: red;
+            }
+            .paixu{
+                span{
+                    padding: 5px;
+                }
+            }
         }
         .list{
+            overflow: hidden;
             margin-top: 30px;
             li{
                 float: left;
@@ -147,6 +159,23 @@ main{
                 &:hover{
                     border:1px solid #ccc;
                 }
+            }
+        }
+        .page{
+            margin-top: 30px;
+            span{
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                width: 50px;
+                float: left;
+                margin-left: 20px;
+                border-radius:15px;
+            }
+            .active{
+                background: red;
+                color:#fff;
             }
         }
     }

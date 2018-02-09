@@ -1,10 +1,19 @@
-/* 
-* @Author: Marte
-* @Date:   2018-02-08 22:02:37
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 22:16:33
-*/
-
-$(document).ready(function(){
-    
-});
+define(['jquery'],function(){
+    return function(){
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()>=600){
+                $('#returnTop').find('ul').stop().animate({
+                    height:200,
+                }) 
+            }
+            else{
+               $('#returnTop').find('ul').stop().animate({
+                    height:160,
+                }) 
+            }
+        })
+        $('.doreyurn').on('click',function(){
+            window.scrollTo(0)
+        })
+    }
+})

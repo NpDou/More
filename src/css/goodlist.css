@@ -125,7 +125,20 @@ main .main_r h4 > span i {
   color: red;
 }
 
+main .main_r h4 .next, main .main_r h4 .prov {
+  border: 1px solid #ccc;
+}
+
+main .main_r h4 .fal {
+  background: red;
+}
+
+main .main_r h4 .paixu span {
+  padding: 5px;
+}
+
 main .main_r .list {
+  overflow: hidden;
   margin-top: 30px;
 }
 
@@ -177,4 +190,24 @@ main .main_r .list li:hover div {
 
 main .main_r .list li:hover {
   border: 1px solid #ccc;
+}
+
+main .main_r .page {
+  margin-top: 30px;
+}
+
+main .main_r .page span {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  float: left;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+main .main_r .page .active {
+  background: red;
+  color: #fff;
 }

@@ -1,7 +1,10 @@
 require(['config'],function(){
-    require(['jquery','footer','zoom','lunbo','conmon'],function($,foo,zoo){
+    require(['jquery','footer','zoom','return','lunbo','common'],function($,foo,zoo,re){
         $('footer').load('footer.html #link,#copyright',function(){
             foo();
+        });
+        $('.returnT').load('../html/return.html',function(){
+            re();
         });
         $('.code').html(vCode()).css({
             backgroundColor:randomColor(),
